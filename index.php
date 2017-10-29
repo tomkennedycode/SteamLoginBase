@@ -22,7 +22,7 @@ try {
 
     if(!$openid->mode) {
     } elseif($openid->mode == 'cancel') {
-        echo 'User has canceled authentication!';
+        echo 'User has cancelled authentication!';
     } elseif($openid->validate()) {
             $id = $openid->identity;
             $ptn = '/^http:\/\/steamcommunity\.com\/openid\/id\/(7[0-9]{15,25}+)$/';
